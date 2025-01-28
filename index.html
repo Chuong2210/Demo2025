@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng năm mới</title>
+    <link rel="stylesheet" href="./styles.css">
+ 
+</head>
+<body>
+    <canvas id="cas"></canvas>
+    <div id="Merry" class="christmas-message">Chúc mừng năm mới</div>
+    <img class="tree-icon">
+    <audio id="audio" src="./tet1.mp3"></audio>
+    <div class="container">
+        <button id="showButton">
+            Thân gửi
+        </button>
+    </div>
+
+    <div id="guideInfo" class="hidden">
+        <button id="closeButton" class="close-btn">X</button>
+        <div class="card">
+            <div class="imgBox">
+                <div class="bark"></div>
+                <img src="image/anhtet.png" alt="line slow">
+            </div>
+            <div class="details">
+                <h4 class="color1">Xuân về vạn lộc</h2>
+                    <h4 class="color2 margin">Chúc mừng năm mới!</h3>
+                        <p><br></p>
+                        <p> </p>
+                        <p style="text-indent: 1em;" >Kính chúc quý vị một năm mới an khang.</p>
+                        <p style="text-indent: 1em;">Chúc cả nhà luôn mạnh khỏe,thịnh vượng.</p>
+                        <p style="text-indent: 1em;"> Một năm mới ngập tràn niềm vui </p>
+                        <p> và hạnh phúc đang chờ đón chúng ta. </p> 
+                        <p style="text-indent: 1em;"> Hãy cùng nhau tạo nên những kỷ</p>
+                        <P> niệm đẹp và đáng nhớ nhé!</P>
+                        <p style="text-indent: 1em;"> Chúc tất cả chúng ta luôn giữ vững tinh</p>
+                        <p>thần lạc quan, vượt qua mọi khó khăn </p>
+                        <p>và đạt được những thành công mới.</p>
+                        <p><br></p>
+                        <p class="text-right">Trân trọng </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <script>
+        document.body.addEventListener("click", function() {
+             var audio = document.getElementById("audio");
+             audio.play();
+         });
+     </script>
+</body>
+</html>
